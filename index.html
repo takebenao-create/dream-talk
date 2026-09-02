@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What do you want to be? - Pronunciation Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <main class="wrap">
+    <section id="page1" class="page active" aria-label="Pronunciation practice">
+
+    <header>
+      <div>
+        <p class="eyebrow">Grade 6 · Pronunciation Practice</p>
+        <h1>Dream Talk</h1>
+        <p class="subtitle">聞いて、まねして、友達に伝えてみよう。</p>
+      </div>
+      <div class="goal">Today's Goal：将来の夢を伝えよう</div>
+    </header>
+
+    <section class="grid">
+      <article class="card question">
+        <div class="card-inner">
+          <div class="number">1</div>
+          <p class="phrase">What do you want to be?</p>
+          <p class="ja">将来、何になりたいですか？</p>
+
+          <div class="controls">
+            <button type="button" class="listen practice-audio"
+              data-text="What do you want to be?" data-rate="0.92">
+              👂 Listen
+            </button>
+            <button type="button" class="slow practice-audio"
+              data-text="What do you want to be?" data-rate="0.68">
+              🐢 Slowly
+            </button>
+          </div>
+
+          <div class="tip">
+            <strong>Point</strong>：
+            一語ずつ切らずに、<span class="accent">What do you want to be?</span>
+            をひとかたまりで聞いて、まねしてみよう。
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-inner">
+          <div class="number">2</div>
+
+          <div class="answer-row">
+            <span class="fixed">I want to be a</span>
+            <select id="job" aria-label="job">
+              <option value="baseball player">baseball player</option>
+              <option value="soccer player">soccer player</option>
+              <option value="YouTuber">YouTuber</option>
+              <option value="teacher">teacher</option>
+              <option value="pastry chef">pastry chef</option>
+              <option value="police officer">police officer</option>
+              <option value="nurse">nurse</option>
+              <option value="firefighter">firefighter</option>
+              <option value="game creator">game creator</option>
+              <option value="artist">artist</option>
+            </select>
+            <span class="fixed">.</span>
+          </div>
+
+          <p class="ja">私は〇〇になりたいです。</p>
+
+          <div class="controls">
+            <button type="button" class="listen answer-audio" data-rate="0.92">
+              👂 Listen
+            </button>
+            <button type="button" class="slow answer-audio" data-rate="0.68">
+              🐢 Slowly
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-inner">
+          <div class="number">3</div>
+          <p class="phrase">Why?</p>
+          <p class="ja">どうして？</p>
+
+          <div class="controls">
+            <button type="button" class="listen practice-audio"
+              data-text="Why?" data-rate="0.92">
+              👂 Listen
+            </button>
+            <button type="button" class="slow practice-audio"
+              data-text="Why?" data-rate="0.68">
+              🐢 Slowly
+            </button>
+          </div>
+
+          <div class="tip">
+            <strong>Communication</strong>：
+            相手の答えを聞いて、もっと知りたいと思ったら
+            <span class="accent">Why?</span> と聞いてみよう。
+          </div>
+        </div>
+      </article>
+    </section>
+
+    
+  
+      <div class="page-nav">
+        <button type="button" class="nav-btn" id="toPage2">Next → Conversation</button>
+      </div>
+    </section>
+
+    <section id="page2" class="page" aria-label="Conversation flow">
+      <header>
+        <div>
+          <p class="eyebrow">Grade 6 · Enjoy Communication</p>
+          <h1>Dream Talk</h1>
+          <p class="subtitle">あいさつから終わりのあいさつまで、会話をつなげてみよう。</p>
+        </div>
+        <div class="goal">Today's Goal：友達と夢を伝え合おう</div>
+      </header>
+
+      <div class="conversation-audio">
+        <button type="button" class="play-all" id="playConversation">👂 会話を最初から聞く</button>
+        <button type="button" class="stop-audio" id="stopConversation">■ Stop</button>
+      </div>
+
+      <div class="conversation-flow">
+        <section class="flow-block">
+          <div class="flow-label">1　はじめのあいさつ</div>
+          <div class="dialogue">
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker">A</span>
+                <span>Hi!</span>
+              </div>
+              <button type="button" class="line-audio" data-text="Hi!" data-voice="male" aria-label="Listen to A saying Hi">👂</button>
+            </div>
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker b">B</span>
+                <span>Hi!</span>
+              </div>
+              <button type="button" class="line-audio" data-text="Hi!" data-voice="female" aria-label="Listen to B saying Hi">👂</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="flow-block">
+          <div class="flow-label cyan">2　Small Talk</div>
+          <div class="dialogue">
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker">A</span>
+                <span>What do you want to be?</span>
+              </div>
+              <button type="button" class="line-audio" data-text="What do you want to be?" data-voice="male" aria-label="Listen to What do you want to be">👂</button>
+            </div>
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker b">B</span>
+                <span>I want to be a <strong>soccer player</strong>.</span>
+              </div>
+              <button type="button" class="line-audio" data-text="I want to be a soccer player." data-voice="female" aria-label="Listen to I want to be a soccer player">👂</button>
+            </div>
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker">A</span>
+                <span>Why?</span>
+              </div>
+              <button type="button" class="line-audio" data-text="Why?" data-voice="male" aria-label="Listen to Why">👂</button>
+            </div>
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker b">B</span>
+                <span>I like soccer.</span>
+              </div>
+              <button type="button" class="line-audio" data-text="I like soccer." data-voice="female" aria-label="Listen to I like soccer">👂</button>
+            </div>
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker">A</span>
+                <span>Nice! Good luck!</span>
+              </div>
+              <button type="button" class="line-audio" data-text="Nice! Good luck!" data-voice="male" aria-label="Listen to Nice Good luck">👂</button>
+            </div>
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker b">B</span>
+                <span>Thank you!</span>
+              </div>
+              <button type="button" class="line-audio" data-text="Thank you!" data-voice="female" aria-label="Listen to Thank you">👂</button>
+            </div>
+          </div>
+
+          <div class="reaction-strip" aria-label="Reaction examples">
+            <span class="reaction-chip">Nice!</span>
+            <span class="reaction-chip">Really?</span>
+            <span class="reaction-chip">Me too!</span>
+            <span class="reaction-chip">Good luck!</span>
+          </div>
+
+          <p class="flow-note">
+            ★ 相手の答えを聞いて、表情やジェスチャーも使いながら反応してみよう。 
+          </p>
+        </section>
+
+        <section class="flow-block">
+          <div class="flow-label">3　おわりのあいさつ</div>
+          <div class="dialogue">
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker">A</span>
+                <span>Thank you. See you!</span>
+              </div>
+              <button type="button" class="line-audio" data-text="Thank you. See you!" data-voice="male" aria-label="Listen to Thank you See you">👂</button>
+            </div>
+            <div class="speech">
+              <div class="speech-main">
+                <span class="speaker b">B</span>
+                <span>See you!</span>
+              </div>
+              <button type="button" class="line-audio" data-text="See you!" data-voice="female" aria-label="Listen to See you">👂</button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="page-nav">
+        <button type="button" class="nav-btn secondary" id="toPage1">← Back</button>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
